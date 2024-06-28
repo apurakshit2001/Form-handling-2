@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>HTML Forms</h1>
+
+  <form action="#">
+    <table border="10">
+      <tr>
+        <td><label for="fname">First name:</label></td>
+        <td><input type="text" id="fname" name="fname"></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last name:</label></td>
+        <td><input type="text" id="lname" name="lname"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="number" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country:</label></td>
+        <td>
+          <select id="country" name="country">
+            <option value="Select">Select</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Interests:</label></td>
+        <td>
+          <input type="checkbox" id="sports" name="interests" value="sports">
+          <label for="sports"> Sports</label><br>
+          <input type="checkbox" id="music" name="interests" value="music">
+          <label for="music"> Music</label><br>
+          <input type="checkbox" id="reading" name="interests" value="reading">
+          <label for="reading"> Reading</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" name="message" rows="4" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" class="submit-btn" value="Submit" onclick="showDetails()"></td>
+      </tr>
+    </table>
+  </form>
+
+  <h3>Entered Information:</h3>
+  <table class="Information">
+    <tr>
+      <td id="fnametxt"></td>
+      <td id="lnametxt"></td>
+    </tr>
+    <tr>
+      <td id="phonetxt"></td>
+      <td id="agetxt"></td>
+
+    </tr>
+    <tr>
+      <td id="emailtxt"></td>
+      <td id="countrytxt"></td>
+    </tr>
+    <tr>
+      <td id="gendertxt"></td>
+    </tr>
+    <tr>
+      <td id="intereststxt" colspan="2"></td>
+    </tr>
+    <tr>
+      <td id="messagetxt" colspan="2"></td>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(./wallpaperflare.com_wallpaper\ \(5\).jpg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: fit-content; /* Ensures full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form container styles */
+  form {
+    width: 80%;
+    background-color: rgba(6, 5, 59, 0.178); 
+    backdrop-filter: blur(10px); /* Backdrop filter for blur effect */
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for blur effect */
+    color: #ddd;
+  }
+  
+  /* Table inside form styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Input field styles */
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  input[type=date],
+  select,
+  textarea {
+    width: calc(100% - 16px); /* Adjust for padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Button styles */
+  .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Information table styles */
+  .Information {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  h1,h3,.Information{
+    color: white;
+  }
+  
+  .Information td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+    
+    .Information {
+      width: 100%;
+    }
+  }
+  
