@@ -2,35 +2,34 @@
 <html>
 
 <head>
-  <title>form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extended Contact Form</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <h1>HTML Forms</h1>
-
   <form action="#">
-    <table border="10">
+    <table>
       <tr>
         <td><label for="fname">First name:</label></td>
-        <td><input type="text" id="fname" name="fname"></td>
+        <td><input type="text" id="fname" name="fname" placeholder="Enter your first name"></td>
       </tr>
       <tr>
         <td><label for="lname">Last name:</label></td>
-        <td><input type="text" id="lname" name="lname"></td>
+        <td><input type="text" id="lname" name="lname" placeholder="Enter your last name"></td>
       </tr>
       <tr>
         <td><label for="email">Email:</label></td>
-        <td><input type="email" id="email" name="email"></td>
+        <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
       </tr>
       <tr>
         <td><label for="phone">Phone Number:</label></td>
-        <td><input type="number" id="phone" name="phone"></td>
+        <td><input type="number" id="phone" name="phone" placeholder="Enter your phone number"></td>
       </tr>
       <tr>
         <td><label for="dob">Date of Birth:</label></td>
-        <td><input type="date" id="dob" name="dob"></td>
+        <td><input type="date" id="dob" name="dob" placeholder="Select your date of birth"></td>
       </tr>
       <tr>
         <td><label for="country">Country:</label></td>
@@ -95,13 +94,14 @@
       </tr>
       <tr style="padding: 0;">
         <td><label for="message">Message:</label></td>
-        <td><textarea id="message" name="message" rows="4" cols="50"></textarea></td>
+        <td><textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea></td>
       </tr>
       <tr>
         <td colspan="2"><input type="button" class="submit-btn" value="Submit" onclick="showDetails()"></td>
       </tr>
     </table>
   </form>
+
 
   <h3>Entered Information:</h3>
   <table class="Information" border="5">
