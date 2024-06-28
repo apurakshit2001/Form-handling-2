@@ -7,7 +7,7 @@ const showDetails = () => {
     let country = document.getElementById("country").value;
     let phone = document.getElementById("phone").value;
 
-    let gender = document.querySelector('input[name="gender"]:checked');
+    let gender = document.querySelector('input[name="gender"]:checked').value;
     let interests = document.querySelectorAll('input[name="interests"]:checked');
     let message = document.getElementById("message").value;
 
@@ -130,14 +130,14 @@ const showDetails = () => {
 
     // If form is valid, display the details
     if (validateForm()) {
-        let genderText = gender ? gender.value : "Not specified";
+    //     let genderText = gender ? gender.value : "Not specified";
 
         let interestsList = [];
         interests.forEach(function (interest) {
             interestsList.push(interest.value);
         });
 
-        document.getElementById("gendertxt").innerHTML = "<strong>Gender: </strong>" + genderText;
+        document.getElementById("gendertxt").innerHTML = "<strong>Gender: </strong>" + gender;
         document.getElementById("intereststxt").innerHTML = "<strong>Interests: </strong>" + interestsList.join(", ");
         document.getElementById("countrytxt").innerHTML = "<strong>Country: </strong>" + country;
         document.getElementById("messagetxt").innerHTML = "<strong>Message: </strong>" + message;
